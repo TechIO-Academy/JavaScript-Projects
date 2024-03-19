@@ -1,0 +1,55 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.pomodoro-container {
+    margin: 50px auto;
+    padding: 20px;
+    width: 300px;
+}
+
+#timer-display {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#controls button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#start-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#pause-btn {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+#reset-btn {
+    background-color: #d9534f;
+    color: white;
+}
+
+#settings {
+    margin-top: 20px;
+}
+
+#settings label {
+    margin-right: 10px;
+}
+
+#settings input {
+    width: 50px;
+    padding: 5px;
+}

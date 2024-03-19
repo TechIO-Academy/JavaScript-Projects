@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.menu-container {
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    border-bottom: 1px solid #eee;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #f7f7f7;
+}
+
+.item-name {
+    font-size: 1.5em;
+    color: #333;
+    flex-grow: 1;
+}
+
+.item-description {
+    color: #666;
+    margin: 0 20px;
+    flex-grow: 2;
+    text-align: left;
+}
+
+.item-price {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #007BFF;
+    white-space: nowrap;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}

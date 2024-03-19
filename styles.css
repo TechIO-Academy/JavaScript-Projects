@@ -1,0 +1,132 @@
+/* Include Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-weight: 500;
+}
+
+#search-input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project-tile {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: calc(33.333% - 20px);
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    padding: 15px 20px;
+    background-color: #e7eaf1;
+}
+
+.project-link {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #f9f9fb;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.project-link:hover {
+    background-color: #e7eaf1;
+    color: #0056b3;
+}
+
+/* Responsive Grid */
+@media (max-width: 1200px) {
+    .project-tile {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .project-tile {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    #search-input {
+        width: calc(100% - 40px);
+    }
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+#search-input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding-right: 40px;
+}
+
+#clear-search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 0 15px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #999;
+    border-radius: 0 4px 4px 0;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+#clear-search:hover {
+    color: #666;
+}
